@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download BrainSprout on the App Store</title>
+  <meta name="description" content="Download BrainSprout for iPhone and iPad from the App Store.">
+  <link rel="canonical" href="https://mu-haris.github.io/BrainSprout/download/">
+  <meta property="og:title" content="Download BrainSprout on the App Store">
+  <meta property="og:description" content="Download BrainSprout for iPhone and iPad from the App Store.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mu-haris.github.io/BrainSprout/download/">
+  <meta property="og:image" content="https://mu-haris.github.io/BrainSprout/assets/letters.jpg">
+  <meta name="theme-color" content="#D8F4E8">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+  <link rel="stylesheet" href="/BrainSprout/assets/style.css">
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/BrainSprout/"><span class="brand-mark" aria-hidden="true">🌱</span>BrainSprout</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/BrainSprout/">Home</a>
+        <a href="/BrainSprout/support/">Support</a>
+        <a href="/BrainSprout/privacy/">Privacy</a>
+        <a href="/BrainSprout/terms/">Terms</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="download">
+      <div class="box">
+        <h1>BrainSprout</h1>
+        <p id="status">Opening the App Store…</p>
+        <a id="store-link" class="btn btn-dark" href="/BrainSprout/">Back to BrainSprout</a>
+      </div>
+    </div>
+    <script>
+      // ── Set this to your numeric Apple ID from App Store Connect
+      //    (App Information → General Information → Apple ID), e.g. "6740000000".
+      //    Every QR code and Download button then sends people straight to the App Store.
+      const APP_STORE_ID = "";
+
+      const status = document.getElementById("status");
+      const link = document.getElementById("store-link");
+      if (APP_STORE_ID) {
+        const url = "https://apps.apple.com/app/id" + APP_STORE_ID;
+        link.href = url;
+        link.textContent = "Open in the App Store";
+        window.location.replace(url);
+      } else {
+        status.textContent = "BrainSprout is coming soon to the App Store for iPhone and iPad. Check back shortly!";
+      }
+    </script>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong>BrainSprout</strong> · ABC &amp; 123 Learning<br>
+        © 2026 Kinex Apps · <a href="https://kinexapps.com/">kinexapps.com</a><br>
+        <a href="mailto:muhammadharisgift1@gmail.com">muhammadharisgift1@gmail.com</a>
+      </div>
+      <nav aria-label="Footer">
+        <a href="/BrainSprout/support/">Support</a>
+        <a href="/BrainSprout/privacy/">Privacy Policy</a>
+        <a href="/BrainSprout/terms/">Terms of Use</a>
+        <a href="/BrainSprout/download/">Download</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
